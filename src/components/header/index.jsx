@@ -1,4 +1,3 @@
-// import "../../styles/Header.css";
 
 import GDriveLogo from "../../media/google-drive-logo.png";
 
@@ -14,28 +13,6 @@ import Tooltip from "@mui/material/Tooltip";
 
 const index = ({ userPhoto }) => {
   return (
-    // <div className='header'>
-    //     <div className="header__logo">
-    //         <img src={GDriveLogo} alt="Google Drive" />
-    //         <span>Drive</span>
-    //     </div>
-    //     <div className="header__searchContainer">
-    //         <div className="header__searchBar">
-    //             <SearchIcon />
-    //             <input type="text" placeholder='Search in Drive' />
-    //             <ExpandMoreIcon />
-    //         </div>
-    //     </div>
-    //     <div className="header__icons">
-    //         <span>
-    //             <HelpOutlineIcon />
-    //             <SettingsIcon />
-    //         </span>
-    //         <AppsIcon />
-    //         <img src={userPhoto} alt="User Photo"/>
-    //     </div>
-    // </div>
-
     <div className=" w-full fixed top-0 left-0">
 
     <div className=" flex p-2 px-2">

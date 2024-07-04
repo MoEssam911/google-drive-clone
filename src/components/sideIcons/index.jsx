@@ -1,23 +1,66 @@
-import React from 'react'
-import '../../styles/SideIcons.css'
-import AddIcon from '@material-ui/icons/Add';
+import AddIcon from "@material-ui/icons/Add";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
 
 const index = () => {
-    return (
-        <div className='sideIcons'>
-            <div className="sideIcons__top">
-                <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-calendar-512.png" alt="Google Calendar" />
-                <img src="https://assets.materialup.com/uploads/64f5506e-2577-4d19-9425-11a1e1fa31a8/0x0ss-85.jpg" alt="Google Keep" />
-                <img src="https://www.androidpolice.com/wp-content/uploads/2018/03/nexus2cee_new-tasks-icon.png" alt="Google Tasks" />
-            </div>
+  return (
+    <div className="w-14 h-screen ">
+      <div className="w-14 flex flex-col items-center  h-screen fixed right-0 top-[68px]">
+        <div className="w-full flex flex-col items-center gap-4">
+          <Tooltip title="Calendar">
+            <IconButton>
+              <img
+                width={24}
+                className="object-contain"
+                src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-calendar-512.png"
+                alt="Google Calendar"
+              />
+            </IconButton>
+          </Tooltip>
 
-            <hr />
+          <Tooltip title="Keep">
+            <IconButton>
+              <img
+                width={24}
+                src="https://www.gstatic.com/companion/icon_assets/keep_2020q4v3_2x.png"
+                alt="Google Keep"
+              />
+            </IconButton>
+          </Tooltip>
 
-            <div className="sideIcons__plusIcon">
-                <AddIcon />
-            </div>
+          <Tooltip title="Tasks">
+            <IconButton>
+              <img
+                width={24}
+                src="https://www.gstatic.com/companion/icon_assets/tasks_2021_2x.png"
+                alt="Google Tasks"
+              />
+            </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Conatcts">
+            <IconButton>
+              <img
+                width={24}
+                src="https://www.gstatic.com/companion/icon_assets/contacts_2022_2x.png"
+                alt="Google Conatcts"
+              />
+            </IconButton>
+          </Tooltip>
         </div>
-    )
-}
 
-export default index
+        <hr />
+
+        <div className="flex items-center mt-14">
+          <Tooltip title="Get Add-ons">
+            <IconButton>
+              <AddIcon />
+            </IconButton>
+          </Tooltip>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default index;
